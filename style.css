@@ -1,0 +1,28 @@
+
+.rotated {
+    color: black;
+    width: 150px;
+    height: 150px;
+    opacity: .5;
+    text-align: center;
+    font: normal 1em Arial;
+    position: relative;
+    top: 50px;
+    left: 1000px;
+    transform: rotate(90deg);
+}
+
+#tab1 {
+  margin-top: 20px;
+  background: blue;
+}
+
+#tab2 {
+  margin-top: 20px;
+  background: red;
+}
+
+#tab3 {
+  margin-top: 20px;
+  background: green;
+}
