@@ -1,28 +1,113 @@
 
 .rotated {
-    color: black;
-    width: 150px;
-    height: 150px;
-    opacity: .5;
+    background: black;
+    color: white;
+    width: 12%;
+    height: 20%;
+    opacity: .8;
     text-align: center;
     font: normal 1em Arial;
-    position: relative;
-    top: 50px;
-    left: 1000px;
+    position: absolute;
+    left: 80%;
     transform: rotate(90deg);
 }
 
+@keyframes switch {
+  0%{
+    transform: rotate(90deg) translateX(1600px) translateY(-1200px) scale(0);
+    width: 12%;
+    height: 20%;
+    opacity: 0;
+  }
+  100%{
+    transform: rotate(0deg) translateX(0) translateY(0) scale(1);
+    width: 70%;
+    height: 75%;
+    opacity: .8;
+  }
+}
+
+.notRotated {
+  top: 21% !important;
+  color: white;
+  width: 70%;
+  height: 75%;
+  opacity: .8;
+  text-align: center;
+  font: normal 1em Arial;
+  position: absolute;
+  left: 5%;
+  transform: rotate(0deg);
+  animation: switch 1000ms cubic-bezier(1,1.37,.35, .93) forwards;
+}
+
+
+
 #tab1 {
-  margin-top: 20px;
-  background: blue;
+  top: 3%;
+  background: rgb(1, 0, 106);
 }
 
 #tab2 {
-  margin-top: 20px;
-  background: red;
+  top: 21%;
+  background: rgb(65, 63, 234);
 }
 
 #tab3 {
-  margin-top: 20px;
-  background: green;
+  top: 39%;
+  color: black;
+  background: grey;
+}
+
+#tab4 {
+  top: 57%;
+  background: rgb(254, 148, 148);
+}
+
+#tab5 {
+  top: 75%;
+  background: rgb(203, 31, 31);
+}
+
+/*h1 {
+  top: -10%;
+  font-size: 5em;
+}*/
+
+#pgram1 {
+  position: absolute;
+  top: 2.5%;
+  left: 2.5%;
+	width: 4%;
+	height: 12%;
+	-webkit-transform: skew(-20deg);
+	   -moz-transform: skew(-20deg);
+	     -o-transform: skew(-20deg);
+	background: black;
+}
+
+#pgram2 {
+  position: absolute;
+  top: 2.5%;
+  left: 8%;
+	width: 4%;
+	height: 12%;
+	-webkit-transform: skew(-20deg);
+	   -moz-transform: skew(-20deg);
+	     -o-transform: skew(-20deg);
+	background: black;
+}
+
+#pgram3 {
+  color: white;
+  font-size: 3em;
+  position: absolute;
+  top: 2.5%;
+  left: 13.6%;
+	width: 40%;
+	height: 12%;
+	-webkit-transform: skew(-20deg);
+	   -moz-transform: skew(-20deg);
+	     -o-transform: skew(-20deg);
+	background: black;
 }
